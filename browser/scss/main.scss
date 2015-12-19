@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
+
+$font-default: 'Josefin Sans';
+$font-title: 'Julius Sans One';
+$light-teal: #80ffde;
+$aqua-blue: #33cbff;
+$deep-blue: #0000e6;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fdfdfd;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+#main {
+  padding-top: 60px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.text-right {
+  float: right;
+}
+
+@import 'directives/main';
+@import 'home/main';
+@import 'about/main';
+@import 'resume/main';

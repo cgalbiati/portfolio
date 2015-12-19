@@ -1,0 +1,11 @@
+
+<div class='top-padding'><span class='title-text'>{{item.name}}</span>
+<a ng-if='item.url' href="http://www.{{item.url}}"><span>{{item.url}}</span></a>
+<span ng-if='item.place'>{{item.place}}</span>
+<span class='text-right'>{{item.date}}</span>
+</div>
+<p ng-if='item.descr'>{{item.descr}}</p>
+<ul>
+	<li ng-repeat='bullet in item.bullets'>{{bullet}}</li>
+</ul>
+

@@ -1,0 +1,143 @@
+@page Section1 {
+    size:8.5in 11in; 
+    margin:.5in .5in .5in .5in; 
+    mso-header-margin:.25in; 
+    mso-footer-margin:.25in; 
+    mso-paper-source:0;
+}
+body {
+    font:11pt $font-default, Times, Serif;
+}
+@media only screen and (min-device-width: 480px) {
+  body {
+    // background-color:#666;
+  }
+  .page {
+      background-color:white;
+      width:8.5in;
+      height:11in; /* IDK why the size is 9.5in instead of 10 */
+      padding:.5in .5in .5in .5in; 
+      margin:30px auto;
+      box-shadow:0 0 100px #222, 0 0 10px #ffd;
+  }
+}
+
+.heading {
+  background-color: $deep-blue;
+  // border 5px solid $deep-blue;
+  padding: 10px;
+  border-radius: 10px;
+  h1, h3, h5, p{
+    color: white;
+  }
+  a:link {
+    color: white !important;
+    text-decoration: underline;
+  }
+  a:visited {
+    color: white !important;
+    text-decoration: underline;
+  }
+
+}
+
+.page {
+  p {
+    margin-bottom: 0;
+  }
+  h3 {
+    // color: $deep-blue;
+    margin: 5px 0 5px 0;
+    font-family: $font-title;
+     font-weight: bold;
+  }
+  h1{
+    // $font-title: 'Josefin Sans';
+    // background-color: green;
+    margin: 0;
+    font-family: $font-title;
+     font-weight: bold;
+  }
+  a:link {
+    color: black;
+    text-decoration: underline;
+  }
+  a:visited {
+    color: black;
+    text-decoration: underline;
+  }
+  /* mouse over link */
+  a:hover {
+      color: $deep-blue;
+  }
+  .contact {
+    p{
+      padding: 2px 0 5px 0;
+    }
+    
+  }
+}
+.blue-text{
+  margin-top: 5px;
+  color: $deep-blue;
+  font-family: $font-default !important;
+}
+
+.title-text {
+  font-size: 1.5em;
+  color: $deep-blue;
+}
+
+.skills-box {
+  border: 1px solid black;
+}
+
+.no-padding {
+  padding: 0;
+  list-style-type: none;
+
+}
+.padding-right-only {
+  padding: 0 20px 0 0;
+  // margin: 0 0 10px 0;
+}
+.top-padding{
+  padding: 10px 0 0 0;
+}
+
+.skill-item {
+  background-color: $deep-blue;
+  border-radius: 20px;
+  margin: 0 0 6px 0;
+  // font-size: 1.1em;
+  padding: 5px;
+  color: white;
+}
+
+.colorstrip{
+    width: 100%; height: 5px;
+    background-color: $deep-blue;
+    border-radius: 5px;
+    margin: 0 0 5px 0;
+
+}
+
+
+@media print {
+  -webkit-print-color-adjust:exact;
+    #resume {
+  //      h1{
+  //       background-color: green;
+  //   // font-family: $font-default;
+  // }
+      -webkit-print-color-adjust:exact;
+      // $font-title: 'Josefin Sans';
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box;         /* Opera/IE 8+ */
+        height:9.95in;
+        margin-bottom:-5pt;
+    }
+
+
+}
