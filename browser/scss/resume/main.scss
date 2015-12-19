@@ -124,13 +124,22 @@ body {
 
 
 @media print {
-  -webkit-print-color-adjust:exact;
+  *{
+    -webkit-print-color-adjust:exact;
+    print-color-adjust: exact;
+    font-size:15pt !important;
+  }
+
     #resume {
-  //      h1{
-  //       background-color: green;
-  //   // font-family: $font-default;
-  // }
+       h1{
+            color: green;
+        background-color: green;
+    // font-family: $font-default;
+  }
+
+
       -webkit-print-color-adjust:exact;
+      print-color-adjust: exact;
       // $font-title: 'Josefin Sans';
         -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
         -moz-box-sizing: border-box;    /* Firefox, other Gecko */
