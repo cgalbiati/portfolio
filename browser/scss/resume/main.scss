@@ -1,24 +1,20 @@
 @page Section1 {
     size:7.5in 10in; 
-    margin:0in .5in .5in .5in !important; 
-    padding: -.5in 0 0 0!important; 
-    // mso-header-margin:.5in; 
+    margin:.5in .5in .5in .5in; 
+    padding: 0; 
+    mso-header-margin:.5in; 
     mso-footer-margin:.5in; 
     mso-paper-source:0;
 }
-body {
-  background: transparent !important;
-    font:18pt $font-default, Times, Serif;
-}
-@media only screen and (min-device-width: 480px) {
-  body {
-    // background-color:#666;
-  }
+
+@media screen and (min-device-width: 480px) {
+ 
   .page {
-    background: transparent !important;
+    font-size: 9.2pt;
+    background: transparent;
       // background-color:white;
       width:8.5in;
-      height:11in; /* IDK why the size is 9.5in instead of 10 */
+      height:11.3in; 
       padding:.5in .5in .5in .5in; 
       margin:30px auto;
       box-shadow:0 0 100px #222, 0 0 10px #ffd;
@@ -27,7 +23,6 @@ body {
 
 .heading {
   background-color: $deep-blue;
-  // border 5px solid $deep-blue;
   padding: 10px;
   border-radius: 10px;
   h1, h3, h5, p{
@@ -45,19 +40,17 @@ body {
 }
 
 .page {
+  font-family:$font-default, Times, Serif;
   p {
     margin-bottom: 0;
   }
   h3 {
-    // color: $deep-blue;
     margin: 10px 0 5px 0;
     font-family: $font-title;
      font-weight: bold;
      font-size: 1.8em;
   }
   h1{
-    // $font-title: 'Josefin Sans';
-    // background-color: green;
     margin: 0;
     font-family: $font-title;
      font-weight: bold;
@@ -78,24 +71,22 @@ body {
   .contact {
     p{
       padding: 2px 0 5px 0;
-    }
-    
+    }  
+  }
+  i{
+    padding-right: 5px;
   }
 }
-.blue-text{
+#sub-header{
   margin-top: 5px;
-  color: $deep-blue;
-  font-family: $font-default !important;
+  // color: $deep-blue;
+  font-family: $font-default;
 }
 
 .title-text {
   font-size: 1.5em;
   color: $deep-blue;
   margin-top: 5px;
-}
-
-.skills-box {
-  border: 1px solid black;
 }
 
 .no-padding {
@@ -115,8 +106,7 @@ body {
   background-color: $deep-blue;
   border-radius: 20px;
   margin: 0 0 6px 0;
-  // font-size: 1.1em;
-  padding: 5px;
+  padding: 5px 5px 5px 10px;
   color: white;
 }
 
@@ -130,19 +120,33 @@ body {
 
 
 @media print {
+
+  body: {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+  }
   *{
     -webkit-print-color-adjust:exact;
     print-color-adjust: exact;
     
   }
+  .ng-scope{
+    padding: 0;
+    margin: 0;
+  }
+
   .page{
-    background-color: !important;
-    padding: -.5 0 0 0;
+    background: transparent;
+    // padding: -.5 0 0 0;
+    // padding: -1in .5in 0 0;
+    font-size:15pt;
+    margin: 0;
   }
 
     #resume {
-        padding: -.5in .5in 0 0; 
-        background-color: transparent !important; 
+        padding: 0; 
+        background: transparent; 
         -webkit-print-color-adjust:exact;
         print-color-adjust: exact;
         -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -152,11 +156,16 @@ body {
         // margin-bottom:-5pt;
         // margin-top: -.5in;
         // margin-right: .5in;
-        margin: -.3in .6in -.5pt .2in;
-
-        p {
-          font-size:18pt !important;
+        // margin: 0;
+        margin: -.5in .6in -5pt .1in;
+        .extra-padding-right{
+          padding-right: .3in;
         }
+        .heading{
+          margin-right: .3in;
+        }
+
+        
     }
 
 

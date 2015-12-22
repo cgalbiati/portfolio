@@ -10,10 +10,12 @@ $deep-blue: #0000e6;
 * {
   box-sizing: border-box;
 }
-
-body {
-  background: #fdfdfd;
+@media screen {
+  body {
+    background: #fdfdfd;
+  }
 }
+
 
 @mixin clearfix {
   &:after {

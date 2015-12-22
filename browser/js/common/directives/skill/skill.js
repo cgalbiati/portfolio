@@ -7,7 +7,7 @@ app.directive('skill', function () {
         	skill: '=',
         },
         link: function (scope, element, attr) {
-            scope.colClass = 'col-sm-'+scope.skill.numCols;
+            scope.colClass = 'col-xs-'+scope.skill.numCols;
             // console.log('item', scope.colClass);
             element.addClass(scope.colClass);
         }
