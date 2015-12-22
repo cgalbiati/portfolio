@@ -1,19 +1,22 @@
 @page Section1 {
-    size:8.5in 11in; 
-    margin:.5in .5in .5in .5in; 
-    mso-header-margin:.25in; 
-    mso-footer-margin:.25in; 
+    size:7.5in 10in; 
+    margin:0in .5in .5in .5in !important; 
+    padding: -.5in 0 0 0!important; 
+    // mso-header-margin:.5in; 
+    mso-footer-margin:.5in; 
     mso-paper-source:0;
 }
 body {
-    font:11pt $font-default, Times, Serif;
+  background: transparent !important;
+    font:18pt $font-default, Times, Serif;
 }
 @media only screen and (min-device-width: 480px) {
   body {
     // background-color:#666;
   }
   .page {
-      background-color:white;
+    background: transparent !important;
+      // background-color:white;
       width:8.5in;
       height:11in; /* IDK why the size is 9.5in instead of 10 */
       padding:.5in .5in .5in .5in; 
@@ -47,9 +50,10 @@ body {
   }
   h3 {
     // color: $deep-blue;
-    margin: 5px 0 5px 0;
+    margin: 10px 0 5px 0;
     font-family: $font-title;
      font-weight: bold;
+     font-size: 1.8em;
   }
   h1{
     // $font-title: 'Josefin Sans';
@@ -57,6 +61,7 @@ body {
     margin: 0;
     font-family: $font-title;
      font-weight: bold;
+     font-size: 2.5em;
   }
   a:link {
     color: black;
@@ -86,6 +91,7 @@ body {
 .title-text {
   font-size: 1.5em;
   color: $deep-blue;
+  margin-top: 5px;
 }
 
 .skills-box {
@@ -127,25 +133,30 @@ body {
   *{
     -webkit-print-color-adjust:exact;
     print-color-adjust: exact;
-    font-size:15pt !important;
+    
+  }
+  .page{
+    background-color: !important;
+    padding: -.5 0 0 0;
   }
 
     #resume {
-       h1{
-            color: green;
-        background-color: green;
-    // font-family: $font-default;
-  }
-
-
-      -webkit-print-color-adjust:exact;
-      print-color-adjust: exact;
-      // $font-title: 'Josefin Sans';
+        padding: -.5in .5in 0 0; 
+        background-color: transparent !important; 
+        -webkit-print-color-adjust:exact;
+        print-color-adjust: exact;
         -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
         -moz-box-sizing: border-box;    /* Firefox, other Gecko */
         box-sizing: border-box;         /* Opera/IE 8+ */
         height:9.95in;
-        margin-bottom:-5pt;
+        // margin-bottom:-5pt;
+        // margin-top: -.5in;
+        // margin-right: .5in;
+        margin: -.3in .6in -.5pt .2in;
+
+        p {
+          font-size:18pt !important;
+        }
     }
 
 

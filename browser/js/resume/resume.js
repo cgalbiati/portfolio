@@ -57,8 +57,8 @@ app.controller('ResumeCtrl', function ($scope) {
     	date: 'Aug 2015',
 		descr: 'Visualization of (ski) trails built in four-day hackathon',
     	bullets: [
-    		'Designed an application using Google Maps and Visualizer APIs to analyze elevation profiles of (ski) trails',
-    		'Built sleek ui using Angular and JS-data to seamlessly interact with backend data through Mongoose',
+    		'Won ‘Most Interactive’ award at Fullstack Academy Tessel Hackathon',
+    		'Used a Tessel micro controller to move a ‘tank’, sensed an RFID chip if hit, and updated players scores online',
     	]
     }];
 
