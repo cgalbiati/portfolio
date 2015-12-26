@@ -26,7 +26,7 @@ navbar {
     cursor: pointer;
     transition: color 0.2s;
     &.active {
-      color: darken(#f31214, 10%);
+      color: $brighter-aqua;
     }
     &:hover {
       background: none;
@@ -37,24 +37,24 @@ navbar {
     }
   }
 
-  .login-button {
-    float: right;
-    border: 1px solid black;
-    margin-top: 10px;
-    background: none;
-    outline: none !important;
-  }
+  // .login-button {
+  //   float: right;
+  //   border: 1px solid black;
+  //   margin-top: 10px;
+  //   background: none;
+  //   outline: none !important;
+  // }
 
-  .welcome {
-    float: right;
-    margin-top: 12px;
-    span {
-      color: white;
-    }
-    a {
-      color: #f30046;
-      cursor: pointer;
-    }
-  }
+  // .welcome {
+  //   float: right;
+  //   margin-top: 12px;
+  //   span {
+  //     color: white;
+  //   }
+  //   a {
+  //     color: #f30046;
+  //     cursor: pointer;
+  //   }
+  // }
 
 }

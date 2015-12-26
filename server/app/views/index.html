@@ -3,7 +3,7 @@
 <head>
     <base href="/" />
     <title>Chandra's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/extras/bootstrap.css" media="all"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" media="all">
     <link rel="stylesheet" type="text/css" href="/style.css" media="all"/>
     <script src="/angular/angular.js"></script>
@@ -13,7 +13,11 @@
     <script src="/main.js"></script>
 </head>
 <body ng-app="Portfolio">
-    <!-- <navbar></navbar> -->
-    <div id="main" ui-view></div>
+    <navbar class='no-print navbar-inverse'></navbar>
+    <div id='background'>
+        <div id="overlay">
+            <div id="main" ui-view></div>
+        </div>
+    </div>
 </body>
 </html>

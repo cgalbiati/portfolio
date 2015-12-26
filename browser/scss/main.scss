@@ -6,16 +6,43 @@ $font-title: 'Julius Sans One';
 $light-teal: #80ffde;
 $aqua-blue: #33cbff;
 $deep-blue: #0000e6;
+$sage-green: #05faa3;
+$brighter-aqua: #00ebf3;
+$brighter-teal: #00ffe4;
+$teal: #00e6ce;
 
 * {
   box-sizing: border-box;
 }
 @media screen {
+  body { 
+    // @extend .background-grad;
+    min-height: 100vh;
+  }
   body {
-    background: #fdfdfd;
+    // background: #fdfdfd;
+    // background: red;
+  }
+  #background{
+    background: url(/images/mountain.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    // opacity: .5;
+  }
+  #overlay{
+    // background: url(/images/mountain.jpg);
+    @extend .overlay;
+    @extend .background-grad;
   }
 }
-
+h1, h2, h3{
+  font-family: $font-title, Times, Serif;
+}
+h4, h5, h6, a, p{
+  font-family: $font-default, Times, Serif;
+}
 
 @mixin clearfix {
   &:after {
@@ -26,13 +53,26 @@ $deep-blue: #0000e6;
 }
 
 #main {
-  padding-top: 60px;
+  padding-top: 120px;
   width: 1200px;
   margin: 0 auto;
 }
 
 .text-right {
   float: right;
+}
+
+.background-grad {
+  background: $aqua-blue; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, $brighter-aqua, $aqua-blue, $teal); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, $brighter-aqua, $aqua-blue, $teal); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, $brighter-aqua, $aqua-blue, $teal); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, $brighter-aqua, $aqua-blue, $teal); /* Standard syntax */
+}
+.overlay{
+  min-height: 100vh;
+  // opacity: .8;
+  filter: alpha(opacity=80);
 }
 
 @import 'directives/main';

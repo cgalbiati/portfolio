@@ -9,8 +9,10 @@ app.directive('navbar', function ($rootScope, $state) {
             scope.items = [
                 { label: 'Home', state: 'home' },
                 { label: 'About Me', state: 'about' },
-                // { label: 'Documentation', state: 'docs' },
-                // { label: 'Members Only', state: 'membersOnly', auth: true }
+                { label: 'Portfolio', state: 'portfolio' },
+                { label: 'Resume', state: 'resume' },
+                { label: 'Blog', state: 'blog' },
+                { label: 'Contact', state: 'contact' }
             ];
 
             
