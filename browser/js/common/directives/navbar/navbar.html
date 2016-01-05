@@ -1,13 +1,16 @@
 <nav class="navbar navbar-fixed-top navbar-inverse">
     <div class="container">
         <div class="navbar-header">
-            <h3>Chandra Galbiati - Software Engineer</h3>
+            <a href="mailto:chandra.galbiati@gmail.com"><h3>Chandra Galbiati</h3></a>
             <!-- <mtn-logo></mtn-logo> -->
         </div>
         <ul class="nav navbar-nav">
             <li ng-repeat="item in items">
                 <a ui-sref-active="active" ui-sref="{{ item.state }}">{{ item.label }}</a>
             </li>
+            <!-- <li ng-repeat="item in scrollItems">
+                <a ng-click='scrollTo(item.id)'>{{ item.label }}</a>
+            </li> -->
         </ul>
     </div>
 </nav>

@@ -1,0 +1,13 @@
+#portfolio{
+	h1, h2, p{
+		text-align: center
+	}
+	.project-circle{
+		border: solid black 2px;
+		border-radius: 300px;
+		background-color: white;
+		margin: auto;
+		min-height: 250px;
+		padding: 10px;
+	}
+}

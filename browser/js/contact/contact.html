@@ -1,0 +1,47 @@
+<section id='contact' class='inner-main'>
+	<div class="panel">
+  		<div class="panel-heading">
+    		<h1 class="text-center">Contact me</h1>
+  		</div>
+		<div class='contact'>
+			<!-- <div class='col-xs-12 col-sm-6 col-md-3'><i class="fa fa-phone"></i>720-771-0571</div> -->
+			<div class='col-xs-12 col-sm-6 col-md-3'><a href="mailto:chandra.galbiati@gmail.com"><i class="fa fa-envelope"></i>chandra.galbiati@gmail.com</a></div>
+			<div class='col-xs-12 col-sm-6 col-md-3'><a href="https://github.com/cgalbiati"><i class="fa fa-github"></i>github.com/cgalbiati</a></div>
+			<div class='col-xs-12 col-sm-6 col-md-3'><a href="http://www.linkedin.com/in/chandragalbiati"><i class="fa fa-linkedin"></i>linkedin.com/in/chandragalbiati</a></div>
+		</div>
+  <form id="contactMe" class="panel-body center-block" name="contactMe" role="form" ng-submit='contactMe.$valid && sendMail()' novalidate>
+    <div class="col-sm-offset-2 col-sm-8">
+      <div class="control-group col-md-6" ng-class="{'has-error':contactMe.name.$dirty && contactMe.name.$invalid || contactMe.name.$invalid && contactMe.$submitted}">
+        <div class="controls">
+          <input ng-model="name" name="name" type="text" value="" class="form-control" id="name" name="name" placeholder="Name" required>
+        </div>
+      </div>
+
+       <div class="control-group col-md-6" ng-class="{'has-error':contactMe.email.$invalid && contactMe.email.$dirty}">
+        <div class="controls">
+          <input ng-model="email" name="email" type="text" value="" class="form-control" id="email" placeholder="Email"  required>
+        </div>
+      </div>
+
+      <div class="control-group message-box" ng-class="{'has-error':contactMe.message.$dirty && contactMe.message.$invalid || contactMe.message.$invalid && contactMe.$submitted}">
+
+        <div class="controls">
+          <textarea ng-model="message" name="message" class="form-control" value="" id="message" name="message" placeholder="Message" required></textarea>
+        </div>
+      </div>
+
+    </div>
+
+
+  
+    <div class="clearfix"></div>
+    <button type="submit" class="btn btn-large create-btn text-center center-block"><h4>Send</h4></button>
+
+
+  </form>
+</div>
+
+
+	
+</section>
+

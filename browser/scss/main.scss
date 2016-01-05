@@ -23,7 +23,7 @@ $teal: #00e6ce;
     // background: #fdfdfd;
     // background: red;
   }
-  #background{
+  .background{
     background: url(/images/mountain.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -53,9 +53,16 @@ h4, h5, h6, a, p{
 }
 
 #main {
-  padding-top: 120px;
-  width: 1200px;
+  padding: 0;
+  // max-width: 1200px;
   margin: 0 auto;
+}
+
+.inner-main{
+  padding: 120px 20px 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
 }
 
 .text-right {
@@ -69,13 +76,25 @@ h4, h5, h6, a, p{
   background: -moz-linear-gradient(bottom right, $brighter-aqua, $aqua-blue, $teal); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, $brighter-aqua, $aqua-blue, $teal); /* Standard syntax */
 }
+
 .overlay{
   min-height: 100vh;
-  // opacity: .8;
-  filter: alpha(opacity=80);
+  opacity: .8;
+  // filter: alpha(opacity=80);
+}
+
+@media print {
+  body {
+    background: transparent;
+  }
+  .background, .background-grad {
+    background: transparent;
+  }
 }
 
 @import 'directives/main';
 @import 'home/main';
 @import 'about/main';
 @import 'resume/main';
+@import 'portfolio/main';
+

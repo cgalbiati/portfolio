@@ -69,11 +69,11 @@
   a:hover {
       color: $deep-blue;
   }
-  .contact {
-    p{
-      padding: 2px 0 5px 0;
-    }  
-  }
+}
+.contact {
+  p{
+    padding: 2px 0 5px 0;
+  }  
   i{
     padding-right: 5px;
   }
@@ -87,7 +87,7 @@
 .title-text {
   font-size: 1.5em;
   color: $deep-blue;
-  margin-top: 5px;
+  margin-top: 3px;
 }
 
 .no-padding {
@@ -100,14 +100,14 @@
   // margin: 0 0 10px 0;
 }
 .top-padding{
-  padding: 10px 0 0 0;
+  padding: 7px 0 0 0;
 }
 
 .skill-item {
   background-color: $deep-blue;
   border-radius: 20px;
-  margin: 0 0 6px 0;
-  padding: 5px 5px 5px 10px;
+  margin: 0 0 3px 0;
+  padding: 4px 4px 4px 8px;
   color: white;
 }
 
@@ -121,6 +121,11 @@
 
 
 @media print {
+  navbar {
+    *{
+      display: none;
+    }
+  }
 
   body: {
     background: transparent;
@@ -141,8 +146,10 @@
     background: transparent;
     // padding: -.5 0 0 0;
     // padding: -1in .5in 0 0;
-    font-size:15pt;
-    margin: 0;
+    font-size:8.8pt;
+    margin: .1in -.2in -15pt .1in;
+    height:10in;
+    // padding: .2
   }
 
     #resume {
@@ -153,12 +160,12 @@
         -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
         -moz-box-sizing: border-box;    /* Firefox, other Gecko */
         box-sizing: border-box;         /* Opera/IE 8+ */
-        height:9.95in;
-        // margin-bottom:-5pt;
-        // margin-top: -.5in;
-        // margin-right: .5in;
+        
+        margin-bottom:-5pt;
+        margin-top: .5in;
+        margin-right: .5in;
         // margin: 0;
-        margin: -.5in .6in -5pt .1in;
+        margin: 0;
         .extra-padding-right{
           padding-right: .3in;
         }

@@ -5,7 +5,7 @@
   @include clearfix;
 
   p {
-    width: 40%;
+    // width: 40%;
     margin: 0 auto;
     text-align: justify;
     font-size: 22px;
@@ -13,26 +13,31 @@
     float: left;
   }
 
-  .carousel {
-    float: right;
-    width: 55%;
-    overflow: hidden;
-    margin: 0 auto;
-    .carousel-inner {
-      height: 500px !important;
-    }
-    .carousel-control {
-      background: none;
-    }
-    .carousel-indicators {
-      display: none;
-    }
-    img {
+  // .carousel {
+  //   float: right;
+  //   width: 55%;
+  //   overflow: hidden;
+  //   margin: 0 auto;
+  //   .carousel-inner {
+  //     height: 500px !important;
+  //   }
+  //   .carousel-control {
+  //     background: none;
+  //   }
+  //   .carousel-indicators {
+  //     display: none;
+  //   }
+  //   img {
+  //     max-width: 100%;
+  //     max-height: 500px;
+  //     display: block;
+  //     margin: 0 auto;
+  //   }
+  // }
+img {
       max-width: 100%;
       max-height: 500px;
       display: block;
       margin: 0 auto;
     }
-  }
-
 }

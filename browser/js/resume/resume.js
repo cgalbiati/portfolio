@@ -6,7 +6,7 @@ app.config(function ($stateProvider) {
     });
 });
 
-app.controller('ResumeCtrl', function ($scope) {
+app.controller('ResumeCtrl', function ($scope, ProjectFactory) {
 
     $scope.skills = [
 	    {name: 'JavaScript', numCols: '12'},
@@ -33,34 +33,8 @@ app.controller('ResumeCtrl', function ($scope) {
     	{name: 'Heroku', numCols: '10'},
 	    {name: 'AWS', numCols: '6'},
 	    {name: 'Google Analytics', numCols: '6'},];
-    $scope.projects = [{
-    	name: 'SpellBook',
-    	date: 'Oct 2015',
-    	url: 'myspellbook.org',
-    	descr: 'Interactive story-driven computer science education',
-    	bullets: [
-    		'Designed a visual programming language inspired by Scratch to expose children to basic programming logic',
-    		'Implemented a heavily customized game engine of top of Crafty for players to run commands on a game board',
-    		'Used Angular and JS-data to modularize code and manage logic on the front end'
-    	]
-    },{
-    	name: 'Slopes',    	
-    	date: 'Sept 2015',
-    	url: 'murmuring-ridge-5510.herokuapp.com',
-    	descr: 'Visualization of (ski) trails built in four-day hackathon',
-    	bullets: [
-    		'Designed an application using Google Maps and Visualizer APIs to analyze elevation profiles of (ski) trails',
-    		'Built sleek ui using Angular and JS-data to seamlessly interact with backend data through Mongoose',
-    	]
-    },{
-    	name: 'Tanks',
-    	date: 'Aug 2015',
-		descr: 'Visualization of (ski) trails built in four-day hackathon',
-    	bullets: [
-    		'Won ‘Most Interactive’ award at Fullstack Academy Tessel Hackathon',
-    		'Used a Tessel micro controller to move a ‘tank’, sensed an RFID chip if hit, and updated players scores online',
-    	]
-    }];
+
+    $scope.projects = ProjectFactory.projects.filter(project=>project.resume);
 
     $scope.jobs = [{
     	name: 'Science Teacher', 
@@ -92,7 +66,7 @@ app.controller('ResumeCtrl', function ($scope) {
 		date: 'May 2012',
 		bullets: ['Major: English, GPA: 3.9, Dean’s list: 2011, 2012, Phi Beta Kappa']
     }];
-    $scope.interests = [];
+    // $scope.interests = [];
 
 });
 
