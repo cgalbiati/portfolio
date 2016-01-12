@@ -11,3 +11,20 @@
 		padding: 10px;
 	}
 }
+
+// overflow:hidden;
+//   z-index:2;
+//   margin-bottom:15px;
+
+  .cover-image{
+    width:100%;
+    height:auto;
+	overflow:hidden;
+  }
+
+  // &:hover {
+  //   z-index: 2;
+  //   cursor: none;
+  //   background-color: white;
+  //   transform: scale3d(1.02, 1.02, 1.02) translate3d(0, -1px, 0);
+  // }

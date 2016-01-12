@@ -9,30 +9,29 @@ app.config(function ($stateProvider) {
 app.controller('ResumeCtrl', function ($scope, ProjectFactory) {
 
     $scope.skills = [
-	    {name: 'JavaScript', numCols: '12'},
-	    {name: 'Python', numCols: '6'},
-	    {name: 'C++', numCols: '6'},
-	    {name: 'NodeJs', numCols: '12'},
-	    {name: 'ES6', numCols: '10'},
-	    {name: 'Angular', numCols: '12'},
-	    {name: 'MySQL', numCols: '10'},
-	    {name: 'Sequelize', numCols: '10'},
-	    {name: 'MongoDb', numCols: '12'},
-	    {name: 'Mongoose', numCols: '12'},
-	    {name: 'CSS3', numCols: '10'},
-	    {name: 'Sass', numCols: '10'},
-	    {name: 'JQuery', numCols: '8'},
-	    {name: 'HTML5', numCols: '10'},
-	    {name: 'Bootstrap', numCols: '10'},
-	    {name: 'Websockets', numCols: '8'},
-	    {name: 'Express', numCols: '12'},
-	    {name: 'Lodash', numCols: '10'},
-	    {name: 'JS-Data', numCols: '12'},
-	    {name: 'Google Maps API', numCols: '8'},];
-    $scope.tools = [{name: 'Git', numCols: '12'},
-    	{name: 'Heroku', numCols: '10'},
-	    {name: 'AWS', numCols: '6'},
-	    {name: 'Google Analytics', numCols: '6'},];
+	    {name: 'JavaScript', numCols: '12', cat: 'high'},
+	    {name: 'NodeJs', numCols: '12', cat: 'high'},
+	    {name: 'Angular', numCols: '12', cat: 'high'},
+        {name: 'MongoDB', numCols: '12', cat: 'high'},
+	    {name: 'MySQL', numCols: '10', cat: 'med'},
+	    {name: 'CSS3', numCols: '10', cat: 'med'},
+        {name: 'HTML5', numCols: '10', cat: 'med'},
+        {name: 'Sass', numCols: '10', cat: 'med'},
+	    {name: 'JQuery', numCols: '8', cat: 'med'},
+        {name: 'Python', numCols: '6', cat: 'low'},
+        {name: 'C++', numCols: '6', cat: 'low'},
+        {name: 'Mongoose', numCols: '12', cat: 'high'},
+	    {name: 'Express', numCols: '12', cat: 'high'},
+	    {name: 'JSData', numCols: '12', cat: 'high'},
+        {name: 'Bootstrap', numCols: '10', cat: 'med'},
+        {name: 'Sequelize', numCols: '10', cat: 'med'},
+        {name: 'Lodash', numCols: '10', cat: 'med'},
+        {name: 'Websockets', numCols: '8', cat: 'med'},
+	    {name: 'Google Maps API', numCols: '8', cat: 'med'},];
+    $scope.tools = [{name: 'Git', numCols: '12', cat: 'high'},
+    	{name: 'Heroku', numCols: '10', cat: 'med'},
+	    {name: 'AWS', numCols: '6', cat: 'low'},
+	    {name: 'Google Analytics', numCols: '6', cat: 'low'},];
 
     $scope.projects = ProjectFactory.projects.filter(project=>project.resume);
 
@@ -42,24 +41,32 @@ app.controller('ResumeCtrl', function ($scope, ProjectFactory) {
     	date: '2012- 2015',
 		descr: 'Certification: Science Teacher (Biology) grades 7-12',
 		bullets: [
-			'Taught, tracked and analyzed performance of 100 students per year on 25 standards',
 			'Created and implemented curricula for Regents Biology, Regents Earth Science, and 7th grade General Science',
+            'Taught, tracked, and analyzed performance of 100 students per year on 25 standards',
 			'Nominated to feature in a video of exemplary discussion facilitation partnering with the The Danielson Group'
 		]
-    }];
+    }, {
+        name: 'Biology Research Lab Assistant', 
+        place: 'Wesleyan University',
+        date: '2008- 2012',
+        bullets: [
+            'Prepared and analyzed chemical and biological samples for developmental biology lab',
+            'Revised and digitized lab protocols to correct errors, add new methods, and make instructions more clear',
+            'Led new assistant trainings'
+            ]}
+    ];
     $scope.education = [{
     	name: 'Fullstack Academy',
     	place: 'New York, NY',																		    
     	date: 'Oct 2015',
 		bullets: [
-			'Immersive web-development course featuring the MEAN stack',
-			'Completed multiple independent and collaborative projects using agile methodologies'
+			'Studied software engineering full-time in 13-week program focused on the JavaScript MEAN stack',
+			'Designed and implemented multiple independent and collaborative projects using Agile methodologies'
 	]},{
 		name: 'Relay GSE',
-		place: 'Masters in Teaching, Grades 7-12, Biology, New York, NY',
+		place: 'Master\'s in Teaching, Grades 7-12, Biology, New York, NY',
 		date: 'Jul 2014',
-		bullets: ['Completed a Masters Degree while teaching as part of the New York City Teaching Fellowship',
-			'Data-driven, skills oriented masters program, aimed at developing teachers who engage, track and impact students of all levels and backgrounds'
+		bullets: ['Data-driven, skills-oriented Master\'s Degree, aimed at developing teachers who engage, track, and impact students of all levels and backgrounds'
 	]},{
 		name: 'Wesleyan University',
 		place: 'Bachelor of Arts,  Middletown, CT', 													  

@@ -6,6 +6,8 @@ $font-title: 'Julius Sans One';
 $light-teal: #80ffde;
 $aqua-blue: #33cbff;
 $deep-blue: #0000e6;
+$deep-blue-med: #0251ad;
+$deep-blue-low: #4566ba;
 $sage-green: #05faa3;
 $brighter-aqua: #00ebf3;
 $brighter-teal: #00ffe4;
@@ -87,8 +89,12 @@ h4, h5, h6, a, p{
   body {
     background: transparent;
   }
-  .background, .background-grad {
+  .background, .background-grad, .overlay {
     background: transparent;
+    opacity: 1;
+  }
+  .no-print {
+    display: none;
   }
 }
 

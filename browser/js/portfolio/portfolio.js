@@ -12,6 +12,10 @@ app.config(function ($stateProvider) {
 app.controller('PortfolioController', function ($scope, ProjectFactory) {
 
     $scope.projects = ProjectFactory.projects;
+    $scope.clickedProj;
+    $scope.chooseProj = function(proj){
+    	$scope.clickedProj = proj;
+    };
 
 });
 

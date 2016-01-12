@@ -6,9 +6,9 @@ app.directive('portfolioItem', function () {
         scope: {
         	project: '=',
         },
-        // link: function (scope) {
-        //     console.log('project', scope.project)
-        // }
+        link: function (scope) {
+            scope.show = false;
+        }
     };
 
 });

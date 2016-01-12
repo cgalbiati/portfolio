@@ -1,5 +1,6 @@
-	<div class='project-circle'>
+	<div class='project-circle' ng-mouseenter='show=true' ng-mouseleave='show=false'>
 		<h2>{{project.name}}</h2>
-		<p >{{project.keywords}}</p>
-		<p >{{project.descr}}</p>
+		<p ng-show='show'>{{project.keywords}}</p>
+		<p ng-show='show'>{{project.descr}}</p>
+		<img src={{project.imgUrl}} class='transparent'>
 	</div>
