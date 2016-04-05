@@ -7,7 +7,7 @@
     mso-paper-source:0;
 }
 
-@media screen and (min-device-width: 480px) {
+@media screen and (min-device-width: 480pt) {
  
   .page {
       font-size: 9.2pt;
@@ -15,30 +15,38 @@
       background-color:white;
       opacity: 2;
       width:8.5in;
-      height:11.3in; 
-      padding:.5in .5in .5in .5in; 
-      margin:30px auto;
-      box-shadow:0 0 100px #222, 0 0 10px #ffd;
+      height:11.5in; 
+      padding:.4in .4in .4in .4in; 
+      margin:30pt auto;
+      box-shadow:0 0 100pt #222, 0 0 10pt #ffd;
       a{
         text-decoration: underline;
       }
   }
+  // #skills-area {
+  //   margin: 0 -.1in 0 -.1in;
+  //   padding-right: -10pt;
+  // }
 }
 
 .heading {
   background-color: $deep-blue;
-  padding: 10px;
-  border-radius: 10px;
-  h1, h3, h5, p{
+  padding: 8pt 10pt 6pt 10pt;
+  border-radius: 10pt;
+  h1, h3, h5, p, a{
     color: white;
+    line-height: .9em;
+  }
+  p {
+    font-size: 1.3em;
   }
   a:link {
     color: white !important;
-    text-decoration: underline;
+    text-decoration: none;
   }
   a:visited {
     color: white !important;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
 }
@@ -49,7 +57,7 @@
     margin-bottom: 0;
   }
   h3 {
-    margin: 5px 0 3px 0;
+    margin: 5pt 0 3pt 0;
     font-family: $font-title;
      font-weight: bold;
      font-size: 1.7em;
@@ -73,14 +81,17 @@
 }
 .contact {
   p{
-    padding: 2px 0 5px 0;
+    padding: 1pt 0 3pt 0;
+    font-size: 1.3em;
+    line-height: 60%;
   }  
   i{
-    padding-right: 5px;
+    padding-right: 5pt;
   }
 }
 #sub-header{
-  margin-top: 2px;
+  margin-top: 6pt;
+  margin-bottom: 6pt;
   // color: $deep-blue;
   font-family: $font-default;
 }
@@ -88,7 +99,7 @@
 .title-text {
   font-size: 1.5em;
   color: $deep-blue;
-  margin-top: 1px;
+  margin-top: 1pt;
 }
 
 .no-padding {
@@ -97,20 +108,24 @@
 
 }
 .padding-right-only {
-  padding: 0 20px 0 0;
-  // margin: 0 0 10px 0;
+  padding: 0 20pt 0 0;
+  // margin-right: -10pt;
 }
 .top-padding{
-  padding: 7px 0 0 0;
+  padding: 0 0 0 0;
+  // padding: 3pt 0 0 0;
 }
 
 .skill-item {
   background-color: $deep-blue;
-  border-radius: 20px;
-  margin: 0 0 5px 0;
-  padding: 4px 4px 4px 8px;
+  border-radius: 20pt;
+  margin: 0 0 3pt 0;
+  padding: 4pt 4pt 4pt 6pt;
   color: white;
+  font-size: 1.1em;
+  line-height: 1.3;
 }
+
 // .profic-high {
 //     background-color: darken($deep-blue, 15%);
 // }
@@ -124,10 +139,10 @@
 // }
 
 .colorstrip{
-    width: 100%; height: 5px;
+    width: 100%; height: 5pt;
     background-color: $deep-blue;
-    border-radius: 5px;
-    margin: 0 0 2px 0;
+    border-radius: 5pt;
+    margin: 0 0 2pt 0;
 
 }
 
@@ -159,10 +174,11 @@
     // padding: -.5 0 0 0;
     // padding: -1in .5in 0 0;
     font-size:8.8pt;
-    margin: .1in -.2in -15pt .1in;
+    margin: .1in -.2in -15pt .1in; //even margins
+    // margin: 0 -.2in -4in .1in; // lestt top margin
     height:10in;
     ul{
-      margin-bottom: 2px;
+      margin-bottom: 1pt;
     }
   }
   a{
@@ -178,14 +194,14 @@
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
     
-    margin-bottom:-5pt;
-    margin-top: .5in;
-    margin-right: .5in;
+    // margin-top: .5in;
+    // margin-right: .5in;
     // margin: 0;
-    margin: 0;
+    margin: 0 0 -20pt 0;
+    // margin-bottom:-20pt;
     .extra-padding-right{
-      padding-right: .15in;
-      margin-left: -.15in;
+      padding-right: 0;
+      margin-left: -20pt;
     }
     .padding-right-only{
       padding-right: 33pt;

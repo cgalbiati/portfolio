@@ -1,8 +1,8 @@
 <section id='portfolio' class='inner-main'>
 <h1>Portfolio</h1>
 <portfolio-item-view project=clickedProj ng-show=clickedProj></portfolio-item-view>
-<div>
-	<div class='col-xs-12 col-sm-6 col-md-3' ng-repeat='item in projects'><portfolio-item project=item ng-click='chooseProj()'></portfolio-item></div>
+<div class='projects'>
+	<div ng-repeat='item in projects' class='grid-item'><portfolio-item project=item ng-click='chooseProj()'></portfolio-item></div>
 </div>
 <div class='clearfix'></div>
 

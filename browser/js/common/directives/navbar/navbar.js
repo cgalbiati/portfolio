@@ -11,7 +11,7 @@ app.directive('navbar', function ($rootScope, $state, $anchorScroll, $location) 
                 { label: 'About Me', state: 'about' },
                 { label: 'Portfolio', state: 'portfolio' },
                 { label: 'Resume', state: 'resume' },
-                { label: 'Blog', state: 'blog' },
+                // { label: 'Blog', state: 'blog' },
                 { label: 'Contact', state: 'contact' }
             ];
             // scope.scrollItems = [

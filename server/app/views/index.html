@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="/extras/bootstrap.css" media="all"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" media="all">
     <link rel="stylesheet" type="text/css" href="/style.css" media="all"/>
-    <script src="/angular/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
     <script src="/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="/angular-bootstrap/ui-bootstrap.js"></script>
     <script src="/angular-bootstrap/ui-bootstrap-tpls.js"></script>
@@ -14,7 +14,8 @@
 </head>
 <body ng-app="Portfolio" class='background'>
     <navbar class='no-print navbar-inverse'></navbar>
-    <div id="overlay">
+    <div class='background-img no-print'></div>
+    <div id="overlay" class='background-grad overlay'>
         <div id="main" ui-view></div>
         <foot class='no-print'></foot>
     </div> 

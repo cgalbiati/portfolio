@@ -5,9 +5,9 @@
   		</div>
 		<div class='contact'>
 			<!-- <div class='col-xs-12 col-sm-6 col-md-3'><i class="fa fa-phone"></i>720-771-0571</div> -->
-			<div class='col-xs-12 col-sm-6 col-md-3'><a href="mailto:chandra.galbiati@gmail.com"><i class="fa fa-envelope"></i>chandra.galbiati@gmail.com</a></div>
-			<div class='col-xs-12 col-sm-6 col-md-3'><a href="https://github.com/cgalbiati"><i class="fa fa-github"></i>github.com/cgalbiati</a></div>
-			<div class='col-xs-12 col-sm-6 col-md-3'><a href="http://www.linkedin.com/in/chandragalbiati"><i class="fa fa-linkedin"></i>linkedin.com/in/chandragalbiati</a></div>
+			<div ><a href="mailto:chandra.galbiati@gmail.com"><i class="fa fa-envelope"></i>chandra.galbiati@gmail.com</a></div>
+			<div><a href="https://github.com/cgalbiati"><i class="fa fa-github"></i>github.com/cgalbiati</a></div>
+			<div><a href="http://www.linkedin.com/in/chandragalbiati"><i class="fa fa-linkedin"></i>linkedin.com/in/chandragalbiati</a></div>
 		</div>
   <form id="contactMe" class="panel-body center-block" name="contactMe" role="form" ng-submit='contactMe.$valid && sendMail()' novalidate>
     <div class="col-sm-offset-2 col-sm-8">
@@ -23,10 +23,10 @@
         </div>
       </div>
 
-      <div class="control-group message-box" ng-class="{'has-error':contactMe.message.$dirty && contactMe.message.$invalid || contactMe.message.$invalid && contactMe.$submitted}">
+      <div class="control-group message-box" ng-class="{'has-error':contactMe.message.$dirty && contactMe.messageText.$invalid || contactMe.messageText.$invalid && contactMe.$submitted}">
 
         <div class="controls">
-          <textarea ng-model="message" name="message" class="form-control" value="" id="message" name="message" placeholder="Message" required></textarea>
+          <textarea ng-model="messageText" name="messageText" class="form-control" value="" id="messageText" name="messageText" placeholder="Message" required></textarea>
         </div>
       </div>
 
