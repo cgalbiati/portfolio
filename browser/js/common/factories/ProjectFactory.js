@@ -38,7 +38,7 @@ app.factory('ProjectFactory', function () {
     },{
         name: 'When I Was Your Age',
         date: 'Mar 2016',
-        url: 'when-i-was-your-age.herokuapp.com',
+        url: 'wheniwasyourage.herokuapp.com',
         github: 'github.com/ksullivan2/whenIWasYourAge',
         descr: 'The Dad-est app ever',
         bullets: [
