@@ -11,11 +11,6 @@ navbar {
     padding-top: 20px;
   }
 
-  // fullstack-logo {
-  //   margin-top: 5px;
-  //   margin-right: 20px;
-  //   width: 40px;
-  // }
 
   a {
     color: #455054;
@@ -38,27 +33,14 @@ navbar {
   }
  @media (max-width: 773px) {
     .mynavbar > .navbar-link {
-      display: inline-block!important;
+      display: inline-block;
     }
   }
-  // .login-button {
-  //   float: right;
-  //   border: 1px solid black;
-  //   margin-top: 10px;
-  //   background: none;
-  //   outline: none !important;
-  // }
+   @media (min-width: 773px) {
+    .mynavbar > .navbar-link {
+      display: block;
+    }
+  }
 
-  // .welcome {
-  //   float: right;
-  //   margin-top: 12px;
-  //   span {
-  //     color: white;
-  //   }
-  //   a {
-  //     color: #f30046;
-  //     cursor: pointer;
-  //   }
-  // }
 
 }
