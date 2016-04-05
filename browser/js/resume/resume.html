@@ -2,10 +2,11 @@
 <div class='page'>
 	<div id='resume' class='resume'>
 	<div class='heading'>
-		<div class='col-xs-8 no-padding'>
+		<div class='col-xs-8 no-padding info'>
 			<h1>Chandra Galbiati</h1>
 			<h3 id='sub-header'>Software Engineer</h3>
 			<p>New York, NY</p>
+			<p><a href="http://chandragalbiati.herokuapp.com">chandragalbiati.com</a></p>
 		</div>
 
 		<div class='col-xs-4 no-padding contact'>
@@ -37,7 +38,7 @@
 				<ul class='no-padding'>
 					<li ng-repeat='school in education'><resume-item item=school></resume-item></li>
 				</ul>
-			<div class='no-padding'>
+<!-- 			<div class='no-padding'>
 				<h3>Interests</h3>
 				<div class="colorstrip"/></div>
 					<div class='col-xs-3' style='padding-left:25px;'>
@@ -53,17 +54,21 @@
 						<p><i class='fa fa-cutlery'></i> Cooking</p>
 					</div>
 				<div class="clearfix"></div>
-			</div>
+			</div> -->
 		</div>
 		<div class='col-xs-2 no-padding extra-padding-right' id='skills-area'>
 			<h3 class='section-title'>Skills</h3>
 			<div ng-repeat='item in skills' class='no-padding'><skill skill=item class='skill-item'></skill>
 				<div class="clearfix"></div>
 			</div>
-			<!-- <h3 class='section-title'>Tools</h3>
-			<div ng-repeat='item in tools' class='no-padding'><skill skill=item class='skill-item'></skill>
-				<div class="clearfix"></div>
-			</div> -->
+			<h3 class='section-title'>Interests</h3>
+			<div class="colorstrip"/></div>
+			<div id='interests'>
+				<p><i class='fa fa-area-chart'></i> Rock Climbing</p>
+				<p><i class='fa fa-camera'></i> Photography</p>
+				<p><i class="fa fa-music"></i> Dancing</p>
+				<p><i class='fa fa-cutlery'></i> Cooking</p>
+			</div>
 		</div>
 	</div>
 </div>

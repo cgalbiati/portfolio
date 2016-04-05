@@ -1,0 +1,71 @@
+<section class='inner-main'>
+<div class='page'>
+  <div id='resume' class='resume'>
+  <div class='heading'>
+    <div class='col-xs-8 no-padding'>
+      <h1>Chandra Galbiati</h1>
+      <h3 id='sub-header'>Software Engineer</h3>
+      <p>New York, NY</p>
+    </div>
+
+    <div class='col-xs-4 no-padding contact'>
+      <p><i class="fa fa-phone"></i>720-771-0571</p>
+      <p><a href="mailto:chandra.galbiati@gmail.com"><i class="fa fa-envelope"></i>chandra.galbiati@gmail.com</a></p>
+      <p><a target="_blank" href="https://github.com/cgalbiati"><i class="fa fa-github"></i>github.com/cgalbiati</a></p>
+      <p><a target="_blank" href="http://www.linkedin.com/in/chandragalbiati"><i class="fa fa-linkedin"></i>linkedin.com/in/chandragalbiati</a></p>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+    
+    <div class='col-xs-10 padding-right-only'>
+      <h3 class='section-title'>Projects</h3>
+      <div class="colorstrip"/></div>
+        <ul class='no-padding'>
+          <li ng-repeat='project in projects'><resume-item item=project></resume-item></li>
+        </ul>
+        <div class="clearfix"></div>
+        
+        <h3>Other Experience</h3>
+        <div class="colorstrip"/></div>
+        <ul class='no-padding'>
+          <li ng-repeat='job in jobs'><resume-item item=job></resume-item></li>
+        </ul>
+      <div class="clearfix"></div>
+
+      <h3>Education</h3>
+      <div class="colorstrip"/></div>
+        <ul class='no-padding'>
+          <li ng-repeat='school in education'><resume-item item=school></resume-item></li>
+        </ul>
+      <div class='no-padding'>
+        <h3>Interests</h3>
+        <div class="colorstrip"/></div>
+          <div class='col-xs-3' style='padding-left:25px;'>
+            <p><i class='fa fa-area-chart'></i> Rock Climbing</p>
+          </div>
+          <div class='col-xs-3'>
+            <p><i class='fa fa-camera'></i> Photography</p>
+          </div>
+          <div class='col-xs-3'>
+            <p><i class="fa fa-music"></i> Dancing</p>
+          </div>
+          <div class='col-xs-3'>
+            <p><i class='fa fa-cutlery'></i> Cooking</p>
+          </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class='col-xs-2 no-padding extra-padding-right' id='skills-area'>
+      <h3 class='section-title'>Skills</h3>
+      <div ng-repeat='item in skills' class='no-padding'><skill skill=item class='skill-item'></skill>
+        <div class="clearfix"></div>
+      </div>
+      <!-- <h3 class='section-title'>Tools</h3>
+      <div ng-repeat='item in tools' class='no-padding'><skill skill=item class='skill-item'></skill>
+        <div class="clearfix"></div>
+      </div> -->
+    </div>
+  </div>
+</div>
+</section>
+

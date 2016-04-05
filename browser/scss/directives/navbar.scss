@@ -36,7 +36,11 @@ navbar {
       background: none;
     }
   }
-
+ @media (max-width: 773px) {
+    .mynavbar > .navbar-link {
+      display: inline-block!important;
+    }
+  }
   // .login-button {
   //   float: right;
   //   border: 1px solid black;

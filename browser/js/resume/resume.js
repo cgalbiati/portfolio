@@ -47,9 +47,10 @@ app.controller('ResumeCtrl', function ($scope, ProjectFactory) {
     {
         name: 'Participant',
         place: 'The Recurse Center',
-        date: 'Jan - Apr 2016',
+        date: 'Feb - Apr 2016',
+        descr: 'Self-directed educational retreat for programmers who want to improve their craft',
         bullets: [
-            'Collaborated with engineers on a variety of projects',
+            'Collaborated with engineers on a variety of projects and lectures',
             'Built a computer starting from NAND gates using hardware simulation (including ALU, CPU and assembler)',
             'Led workshops on computational geometry algorithms focussing on convex hull and finite automata'
         ]

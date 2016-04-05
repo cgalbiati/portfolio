@@ -4,7 +4,7 @@ app.factory('ProjectFactory', function () {
     }
 
     var projects = [{
-        name: 'SketchPad.js',
+        name: 'SketchPad.js (in progress)',
         date: 'Mar - Apr 2016',
         url: 'github.com/cgalbiati/game-engine',
         github: 'github.com/cgalbiati/game-engine',
@@ -20,14 +20,14 @@ app.factory('ProjectFactory', function () {
         size: '200pt'
 
     },{
-        name: 'Places',
+        name: 'Places (in progress)',
         date: 'Feb - Apr 2016',
         url: 'github.com/cgalbiati/places',
         github: 'github.com/cgalbiati/places',
-        descr: '2-D game engine in HTML5 canvas',
+        descr: 'Map-based game',
         bullets: [
             'Wrote sleek UI using React and Redux to manage views and data on the front end',
-            'Used Webpack to transpile and bundle js, jsx, and sass files',
+            // 'Used Webpack to transpile and bundle js, jsx, and sass files',
             'Used React-Leaflet map to visualize locations, connections and game play'
         ],
         resume: true,
@@ -38,7 +38,7 @@ app.factory('ProjectFactory', function () {
     },{
         name: 'When I Was Your Age',
         date: 'Mar 2016',
-        url: 'github.com/ksullivan2/whenIWasYourAge',
+        url: 'when-i-was-your-age.herokuapp.com',
         github: 'github.com/ksullivan2/whenIWasYourAge',
         descr: 'The Dad-est app ever',
         bullets: [
