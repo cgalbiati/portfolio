@@ -14,27 +14,15 @@
     margin-bottom: 10pt;
   }
 
-  // .carousel {
-  //   float: right;
-  //   width: 55%;
-  //   overflow: hidden;
-  //   margin: 0 auto;
-  //   .carousel-inner {
-  //     height: 500px !important;
-  //   }
-  //   .carousel-control {
-  //     background: none;
-  //   }
-  //   .carousel-indicators {
-  //     display: none;
-  //   }
-  //   img {
-  //     max-width: 100%;
-  //     max-height: 500px;
-  //     display: block;
-  //     margin: 0 auto;
-  //   }
-  // }
+  a {
+    color: #333;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: black;
+  }
+
 img {
       max-width: 100%;
       max-height: 500px;

@@ -63,7 +63,7 @@ app.factory('ProjectFactory', function () {
             'Wrote an assembler in JavaScript'
         ],
         resume: false,
-        imgUrl: '/images/xor.gif',
+        imgUrl: '/images/xor.png',
         keywords: ['Functional Programming', 'Redux', 'Game Logic', 'HTML5'],
         longDescr: '',
         size: '200pt',

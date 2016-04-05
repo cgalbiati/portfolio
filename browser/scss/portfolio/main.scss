@@ -19,6 +19,7 @@
 		height: 100%;
     // width:250pt;
 		padding: 10px;
+    padding-top: 0;
     top: 0;
     left: 0;
     right: 0;
@@ -29,6 +30,9 @@
     overflow: scroll;
     // box-shadow: 0 0 5pt gray;
   }
+  // .project-circle > h2 {
+  //   margin-top: 10pt !important;
+  // }
 
   .project-image {
     top: 0;
@@ -47,10 +51,12 @@
 
   .project-image > img { 
     height: auto; 
+    background-color: white;
     background-image: url("path/to/img");
     background-repeat: no-repeat;
     background-size: cover;
     border: solid;
+
   }
   // border-radius: 50%;
   .project-circle:before{
@@ -69,16 +75,16 @@
     opacity: .7;
   }
 
-  #Nand {
+  #Nand, #When, #Tanks {
     color: black;
   }
 
-  #Tanks {
-    color: red;
-  }
-  #When{
-    color: transparent;
-  }
+  // #Tanks {
+  //   color: red;
+  // }
+  // #When{
+  //   color: transparent;
+  // }
 
   .project-circle:hover {
     color: $brighter-aqua !important;
@@ -99,6 +105,9 @@
     box-shadow: 0 0 5pt black;
     border: solid black 2px;
     display: inline-block;
+    background-color: white;
+    z-index: 5;
+
     // float: left;
  }
 

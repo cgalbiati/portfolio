@@ -5,21 +5,26 @@
   }
 
   .contact > div {
-    display: inline-block;
+    display: block;
+    font-size: 2em;
+    padding-bottom: 20pt;
   }
 
   .panel {
-    opacity: .8;
+    opacity: .6;
+    width: 60%;
+    margin:auto;
+    min-width:400pt;
   }
 
-  .control-group {
-    padding: 10pt;
-  }
-  textarea, input, button, .panel {
-    box-shadow: 0 0 5px rgba(0, 0, 0, .7);
-  }
+//   .control-group {
+//     padding: 10pt;
+//   }
+//   textarea, input, button, .panel {
+//     box-shadow: 0 0 5px rgba(0, 0, 0, .7);
+//   }
 
-  textarea {
-    min-height: 100px;
-  }
+//   textarea {
+//     min-height: 100px;
+//   }
 }
