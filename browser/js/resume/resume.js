@@ -52,7 +52,7 @@ app.controller('ResumeCtrl', function ($scope, ProjectFactory) {
         bullets: [
             'Collaborated with engineers on a variety of projects and lectures',
             'Built a computer starting from NAND gates using hardware simulation (including ALU, CPU and assembler)',
-            'Led workshops on computational geometry algorithms focussing on convex hull and finite automata'
+            'Led workshops including finite automata and computational geometry algorithms focussing on convex hull'
         ]
     },{
     	name: 'Science Teacher', 
