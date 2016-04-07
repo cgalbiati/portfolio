@@ -5,7 +5,7 @@ app.factory('ProjectFactory', function () {
 
     var projects = [{
         name: 'SketchPad.js (in progress)',
-        date: 'Mar - Apr 2016',
+        date: 'Mar 2016 - Pres',
         url: 'github.com/cgalbiati/game-engine',
         github: 'github.com/cgalbiati/game-engine',
         descr: '2-D Game Engine for HTML5 Canvas',
@@ -21,7 +21,7 @@ app.factory('ProjectFactory', function () {
 
     },{
         name: 'Places (in progress)',
-        date: 'Feb - Apr 2016',
+        date: 'Feb 2016 - Pres',
         url: 'github.com/cgalbiati/places',
         github: 'github.com/cgalbiati/places',
         descr: 'Map-based game',
@@ -37,7 +37,7 @@ app.factory('ProjectFactory', function () {
         size: '200pt'
     },{
         name: 'When I Was Your Age',
-        date: 'Mar 2016',
+        date: 'Mar - Apr 2016',
         url: 'wheniwasyourage.herokuapp.com',
         github: 'github.com/ksullivan2/whenIWasYourAge',
         descr: 'The Dad-est app ever',
@@ -53,7 +53,7 @@ app.factory('ProjectFactory', function () {
         id:'When'
     },{
         name: 'Nand2Tetris',
-        date: 'Feb - Apr 2016',
+        date: 'Feb 2016 - Pres',
         url: 'github.com/cgalbiati/Nand2Tetris',
         github: 'github.com/cgalbiati/Nand2Tetris',
         descr: 'Building a computer from scratch',
@@ -70,7 +70,7 @@ app.factory('ProjectFactory', function () {
         id: 'Nand'
     },{
         name: 'SpellBook',
-        date: 'Oct 2015',
+        date: 'Oct 2015 - Pres',
         url: 'myspellbook.org',
         github: 'github.com/becks25/spellbook',
         descr: 'Interactive story-driven computer science education',
