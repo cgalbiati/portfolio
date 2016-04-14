@@ -4,6 +4,40 @@ app.factory('ProjectFactory', function () {
     }
 
     var projects = [{
+        name: 'SpellBook',
+        date: 'Oct 2015 - Pres',
+        url: 'myspellbook.org',
+        github: 'github.com/becks25/spellbook',
+        descr: 'Interactive story-driven computer science education',
+        bullets: [
+            'Designed a visual programming language inspired by Scratch to teach programming logic to children',
+            'Implemented a heavily customized game engine on top of Crafty for players to run commands on a game board'
+            // 'Built a game engine using functional approaches and Redux for players to run commands on a game board on HTML5 Canvas',
+            // 'Used Angular and JSData to modularize code and manage logic on the front end'
+        ],
+        resume: true,
+        imgUrl: '/images/spellbook2.png',
+        keywords: '',
+        longDescr: '',
+        size: '200pt'
+    },{
+        name: 'Nand2Tetris',
+        date: 'Feb 2016 - Pres',
+        url: 'github.com/cgalbiati/Nand2Tetris',
+        github: 'github.com/cgalbiati/Nand2Tetris',
+        descr: 'Building a computer from scratch',
+        bullets: [
+            'Followed the Nand2Tetris curriculum to build a computer starting with a NAND gate',
+            'Used hardware simmulation to build gates, and ALU, a CPU, RAM and a computer',
+            'Wrote an assembler in JavaScript'
+        ],
+        resume: false,
+        imgUrl: '/images/xor.png',
+        keywords: ['Functional Programming', 'Redux', 'Game Logic', 'HTML5'],
+        longDescr: '',
+        size: '200pt',
+        id: 'Nand'
+    },{       
         name: 'SketchPad.js (in progress)',
         date: 'Mar 2016 - Pres',
         url: 'github.com/cgalbiati/game-engine',
@@ -15,6 +49,21 @@ app.factory('ProjectFactory', function () {
         ],
         resume: true,
         imgUrl: '/images/game-board.png',
+        keywords: ['Functional Programming', 'Redux', 'Game Logic', 'HTML5'],
+        longDescr: '',
+        size: '200pt'
+    },{       
+        name: 'Fractals (in progress)',
+        date: 'Apr 2016 - Pres',
+        url: 'cgalbiati.github.io/fractals/',
+        github: 'github.com/cgalbiati/fractals',
+        descr: 'Drawing fractals',
+        bullets: [
+            'Designed and implemented algorithms to draw L-systems and Dilution Limited Aggregations',
+            'Used HTML5Canvas to render drawings'
+        ],
+        resume: true,
+        imgUrl: '/images/fractals.png',
         keywords: ['Functional Programming', 'Redux', 'Game Logic', 'HTML5'],
         longDescr: '',
         size: '200pt'
@@ -30,7 +79,7 @@ app.factory('ProjectFactory', function () {
             // 'Used Webpack to transpile and bundle js, jsx, and sass files',
             'Used React-Leaflet map to visualize locations, connections and game play'
         ],
-        resume: true,
+        resume: false,
         imgUrl: '/images/places.png',
         keywords: ['Functional Programming', 'Redux', 'Game Logic', 'HTML5'],
         longDescr: '',
@@ -51,40 +100,6 @@ app.factory('ProjectFactory', function () {
         longDescr: '',
         size: '200pt',
         id:'When'
-    },{
-        name: 'Nand2Tetris',
-        date: 'Feb 2016 - Pres',
-        url: 'github.com/cgalbiati/Nand2Tetris',
-        github: 'github.com/cgalbiati/Nand2Tetris',
-        descr: 'Building a computer from scratch',
-        bullets: [
-            'Followed the Nand2Tetris curriculum to build a computer starting with a NAND gate',
-            'Used hardware simmulation to build gates, and ALU, a CPU, RAM and a computer',
-            'Wrote an assembler in JavaScript'
-        ],
-        resume: false,
-        imgUrl: '/images/xor.png',
-        keywords: ['Functional Programming', 'Redux', 'Game Logic', 'HTML5'],
-        longDescr: '',
-        size: '200pt',
-        id: 'Nand'
-    },{
-        name: 'SpellBook',
-        date: 'Oct 2015 - Pres',
-        url: 'myspellbook.org',
-        github: 'github.com/becks25/spellbook',
-        descr: 'Interactive story-driven computer science education',
-        bullets: [
-            'Designed a visual programming language inspired by Scratch to teach programming logic to children',
-            'Implemented a heavily customized game engine on top of Crafty for players to run commands on a game board'
-            // 'Built a game engine using functional approaches and Redux for players to run commands on a game board on HTML5 Canvas',
-            // 'Used Angular and JSData to modularize code and manage logic on the front end'
-        ],
-        resume: true,
-        imgUrl: '/images/spellbook2.png',
-        keywords: '',
-        longDescr: '',
-        size: '200pt'
     },{
         name: 'Slopes',     
         date: 'Sept 2015',
