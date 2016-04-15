@@ -59,7 +59,7 @@ app.factory('ProjectFactory', function () {
         github: 'github.com/cgalbiati/fractals',
         descr: 'Algorithmic image generation',
         bullets: [
-            'Designed and implemented algorithms to draw L-systems and Dilution Limited Aggregations',
+            'Designed and implemented algorithms to draw L-systems and Diffusion Limited Aggregations',
             'Used HTML5Canvas to render drawings'
         ],
         resume: true,
