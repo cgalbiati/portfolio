@@ -24,6 +24,7 @@ app.controller('ResumeCtrl', function ($scope, ProjectFactory) {
         {name: 'Webpack', numCols: '10', cat: 'med'},
 	    {name: 'JQuery', numCols: '8', cat: 'med'},
         {name: 'Python', numCols: '6', cat: 'low'},
+        {name: 'Django', numCols: '6', cat: 'low'},
         {name: 'C++', numCols: '6', cat: 'low'},
         // {name: 'Mongoose', numCols: '12', cat: 'high'},
 	    {name: 'Express', numCols: '12', cat: 'high'},
