@@ -69,6 +69,21 @@ app.factory('ProjectFactory', function () {
         size: '200pt'
 
     },{
+        name: 'Paralax narrative',
+        date: 'Apr 2016 - Pres',
+        url: 'cgalbiati.github.io/parallax-story/',
+        github: 'github.com/cgalbiati/parallax-story',
+        descr: 'A visual narrative of my experience at the Recurse Center',
+        bullets: [
+            'Implemented paralax scrolling using CSS3',
+        ],
+        resume: false,
+        imgUrl: '/images/parallax.png',
+        keywords: ['CSS3', 'HTML5', 'Paralax scroll'],
+        longDescr: '',
+        size: '200pt'
+
+    },{
         name: 'Places (in progress)',
         date: 'Feb 2016 - Pres',
         url: 'github.com/cgalbiati/places',
