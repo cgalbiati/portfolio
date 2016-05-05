@@ -60,22 +60,22 @@ app.factory('ProjectFactory', function () {
         descr: 'Algorithmic image generation',
         bullets: [
             'Designed and implemented algorithms to draw L-systems and Diffusion Limited Aggregations',
-            'Used HTML5Canvas to render drawings'
+            'Used HTML5Canvas and WebGL to render drawings'
         ],
         resume: true,
         imgUrl: '/images/fractals.png',
-        keywords: ['Functional Programming', 'Redux', 'Game Logic', 'HTML5'],
+        keywords: ['Algorithms', 'WebGL', 'Visualizations', 'HTML5', 'Graphics'],
         longDescr: '',
         size: '200pt'
 
     },{
-        name: 'Paralax narrative',
-        date: 'Apr 2016 - Pres',
+        name: 'Parallax narrative',
+        date: 'Apr 2016',
         url: 'cgalbiati.github.io/parallax-story/',
         github: 'github.com/cgalbiati/parallax-story',
         descr: 'A visual narrative of my experience at the Recurse Center',
         bullets: [
-            'Implemented paralax scrolling using CSS3',
+            'Implemented parallax scrolling using CSS3',
         ],
         resume: false,
         imgUrl: '/images/parallax.png',

@@ -22,9 +22,10 @@ app.controller('ResumeCtrl', function ($scope, ProjectFactory) {
         {name: 'Sass', numCols: '10', cat: 'med'},
         {name: 'Gulp', numCols: '10', cat: 'med'},
         {name: 'Webpack', numCols: '10', cat: 'med'},
-	    {name: 'JQuery', numCols: '8', cat: 'med'},
+        {name: 'JQuery', numCols: '8', cat: 'med'},
         {name: 'Python', numCols: '6', cat: 'low'},
         {name: 'Django', numCols: '6', cat: 'low'},
+        {name: 'WebGL', numCols: '6', cat: 'low'},
         {name: 'C++', numCols: '6', cat: 'low'},
         // {name: 'Mongoose', numCols: '12', cat: 'high'},
 	    {name: 'Express', numCols: '12', cat: 'high'},
@@ -36,7 +37,8 @@ app.controller('ResumeCtrl', function ($scope, ProjectFactory) {
         {name: 'Testing', numCols: '10', cat: 'med'},
         // {name: 'Google Maps API', numCols: '8', cat: 'med'},];
         {name: 'Heroku', numCols: '10', cat: 'med'},
-        {name: 'Websockets', numCols: '8', cat: 'med'}
+        {name: 'Websockets', numCols: '8', cat: 'med'},
+        {name: 'Vagrant', numCols: '6', cat: 'low'},
     // $scope.tools = [{name: 'Git', numCols: '12', cat: 'high'},
 	   //  {name: 'AWS', numCols: '6', cat: 'low'},
 	   //  {name: 'Google Analytics', numCols: '6', cat: 'low'},

@@ -124,9 +124,9 @@
   background-color: $deep-blue;
   border-radius: 20pt;
   margin: 0 0 3pt 0;
-  padding: 3pt 5pt 3pt 6pt;
+  padding: 3pt 5pt 2pt 6pt;
   color: white;
-  font-size: 1.1em;
+  font-size: 1.05em;
   line-height: 1.3;
 }
 
@@ -151,7 +151,7 @@
 }
 
 #interests > p {
-  padding-top: 7pt;
+  padding-top: 3pt;
 }
 
 
@@ -221,6 +221,9 @@
   .contact > p {
       padding: 0 0 1pt 0;
      
+  }
+  .skill-item {
+    font-size: 1em;
   }
 
 
