@@ -11,7 +11,8 @@ app.factory('ProjectFactory', function () {
         descr: 'Interactive story-driven computer science education',
         bullets: [
             'Designed a visual programming language inspired by Scratch to teach programming logic to children',
-            'Implemented a heavily customized game engine on top of Crafty for players to run commands on a game board'
+            'Implemented a heavily customized game engine on top of Crafty for players to run commands on a game board',
+            'Interfaced with a Mongo database to save and track user progress'
             // 'Built a game engine using functional approaches and Redux for players to run commands on a game board on HTML5 Canvas',
             // 'Used Angular and JSData to modularize code and manage logic on the front end'
         ],
@@ -20,6 +21,23 @@ app.factory('ProjectFactory', function () {
         keywords: '',
         longDescr: '',
         size: '200pt'
+    },{
+        name: 'When I Was Your Age',
+        date: 'Mar - Apr 2016',
+        url: 'wheniwasyourage.herokuapp.com',
+        github: 'github.com/ksullivan2/whenIWasYourAge',
+        descr: 'The Dad-est app ever',
+        bullets: [
+            'Built a back end to scrape, rate and save events on Wikipedia, handling thousands of requests per year scraped',
+            'Wrote custom POSTGRES queries to get top ranked events in a range of years and specific years',
+            'Used React to build UI to see events along a lifetime using a slider'
+        ],
+        resume: true,
+        imgUrl: '/images/when.png',
+        keywords: ['Functional Programming', 'Redux', 'Game Logic', 'HTML5'],
+        longDescr: '',
+        size: '200pt',
+        id:'When'
     },{
         name: 'Nand2Tetris',
         date: 'Feb 2016 - Pres',
@@ -99,22 +117,6 @@ app.factory('ProjectFactory', function () {
         keywords: ['Functional Programming', 'Redux', 'Game Logic', 'HTML5'],
         longDescr: '',
         size: '200pt'
-    },{
-        name: 'When I Was Your Age',
-        date: 'Mar - Apr 2016',
-        url: 'wheniwasyourage.herokuapp.com',
-        github: 'github.com/ksullivan2/whenIWasYourAge',
-        descr: 'The Dad-est app ever',
-        bullets: [
-            'Wrote a custom scraper to find and rate events on Wikipedia',
-            'Used React to build UI to see events along a lifetime using a slider'
-        ],
-        resume: true,
-        imgUrl: '/images/when.png',
-        keywords: ['Functional Programming', 'Redux', 'Game Logic', 'HTML5'],
-        longDescr: '',
-        size: '200pt',
-        id:'When'
     },{
         name: 'Slopes',     
         date: 'Sept 2015',
