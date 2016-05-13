@@ -29,7 +29,7 @@ app.factory('ProjectFactory', function () {
         descr: 'The Dad-est app ever',
         bullets: [
             'Built a back end to scrape, rate and save events on Wikipedia, handling thousands of requests per year scraped',
-            'Wrote custom POSTGRES queries to get top ranked events in a range of years and specific years',
+            'Wrote custom Postgres queries to get top ranked events in a range of years and specific years',
             'Used React to build UI to see events along a lifetime using a slider'
         ],
         resume: true,
