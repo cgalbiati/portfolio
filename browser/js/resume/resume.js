@@ -38,7 +38,7 @@ app.controller('ResumeCtrl', function ($scope, ProjectFactory) {
         // {name: 'Google Maps API', numCols: '8', cat: 'med'},];
         {name: 'Heroku', numCols: '10', cat: 'med'},
         {name: 'Websockets', numCols: '8', cat: 'med'},
-        {name: 'Vagrant', numCols: '6', cat: 'low'},
+        // {name: 'Vagrant', numCols: '6', cat: 'low'},
     // $scope.tools = [{name: 'Git', numCols: '12', cat: 'high'},
 	   //  {name: 'AWS', numCols: '6', cat: 'low'},
 	   //  {name: 'Google Analytics', numCols: '6', cat: 'low'},
